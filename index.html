@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<form id="question" action="https://digital-spectr.com/ac/academy.php" enctype="multipart/form-data" method="POST" name="form">
+		<h1>Задать вопрос</h1>
+			<input  type="text" 
+					name="name"
+                	id="name"
+                	form="question" 
+                	placeholder="Фамилия Имя Отчество*" 
+                	pattern="^[?!,.а-яА-ЯёЁ\s]+$"
+                />
+			<input 	type="tel" 
+					name="phone"
+					id="phone" 
+					form="question" 
+					placeholder="Телефон" 
+					autofocus pattern="^\+7\d{10}$"
+					/>
+			<input 	type="email" 
+					name="email"
+					id="email" 
+					form="question" 
+					placeholder="Email"
+					/>
+			<button type="submit" 
+					name="send"
+					id="send" 
+					value="ОТПРАВИТЬ ЗАПРОС" 
+					form="question"
+					>ОТПРАВИТЬ ЗАПРОС</button>
+	</form>
+</body>
+<style>
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+#question {
+    display: flex;
+    flex-direction: column;
+}
+
+#question {
+    width: 330px;
+    margin: 0 auto;
+    /*height: 270px;*/
+    background: #F7F5F9;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0px 40px 40px 40px;
+}
+
+#question h1 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 20px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+#question input, #question button {
+    
+    border-radius: 6px;
+    border-style: none;
+}
+
+#question input {
+	padding: 15px 35px 15px 15px;
+	margin-bottom: 25px;
+}
+
+#question button {
+	padding: 13px 35px 13px 13px;
+    background: #6979F8;
+	color:#fff;
+	font-size: 17px;
+}
+
+
+
+</style>
+</html>
